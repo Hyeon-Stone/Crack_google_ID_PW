@@ -49,9 +49,9 @@ def process(safeStorageKey, loginData):
                 continue
 
             urlUserPassDecrypted = {
-               'origin_url':    url,
-               'username':      user,
-               'password':      decrypt(encryptedPass, iv, key=key)
+                'origin_url':    url,
+                'username':      user,
+                'password':      decrypt(encryptedPass, iv, key=key)
             }
             decryptedList.append(urlUserPassDecrypted)
 
